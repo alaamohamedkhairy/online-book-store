@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <!--aos-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="imegs/icon.png">
+    <title>Book Store</title>
+</head>
+<body>
+    <!--Start navecation-->
+    <div class="nav">
+        <div class="continer">
+            <div class="logo">
+                <a href="#"><img src="imegs/logo.png" alt="logo img"></a>
+            </div>
+            <div class="search">
+                <p>search ...<i class="fa-solid fa-magnifying-glass"></i></p>
+            </div>
+            <div class="nav-ul">
+                <ul>
+                    <li ><i class="fa-solid fa-house"></i><a href="#">Home</a></li>
+                    <li ><i class="fa-solid fa-book"></i><a href="#boook">Books</a></li>
+                    <li ><i class="fa-solid fa-cart-shopping"></i><a href="#">Cart</a></li>
+                    <li id="overlay">
+                        <form action="" method="post" id="text" class="animate">
+                                <div class="continer">
+                                    <div class="user">
+                                        <span><i class="fa-solid fa-user"></i></span>
+                                        <input type="text" placeholder="Your Name">
+                                    </div>
+                                    <div class="pass">
+                                        <span><i class="fa-solid fa-lock"></i></span>
+                                        <input type="password" placeholder="Your Password">
+                                    </div>
+                                    <a href="" class="log">login</a>
+                                </div>
+                        </form>
+                        <button onclick="off()" class="close" Title="Colse">&Cross;</button>
+                    </li>
+                    <li><a onclick="on()"><i class="fa-solid fa-user"></i>login</a></li>
+                    <script>
+                    function on() {
+                        document.getElementById("overlay").style.display = "block";
+                    }
+                    function off() {
+                        document.getElementById("overlay").style.display = "none";
+                    }
+                    </script>
+                    <li id="over"data-aos="fade-right">
+                        <form action="" method="post" id="text">
+                            <div class="continer">
+                                <div class="user">
+                                    <span><i class="fa-solid fa-user"></i></span>
+                                    <input type="text" placeholder="Your Name">
+                                </div>
+                                <div class="email">
+                                    <span><i class="fa-solid fa-envelope"></i></span>
+                                    <input type="email" placeholder="Your Email">
+                                </div>
+                                <div class="pass">
+                                    <span><i class="fa-solid fa-lock"></i></span>
+                                    <input type="password" placeholder="Your Password">
+                                </div>
+                                <a href="" class="log" >Sing Up</a>
+                            </div>
+                        </form>
+                        <button onclick="offf()" class="close" Title="Colse">&Cross;</button>
+                    </li>
+                    <li ><a onclick="onn()">SingUp</a></li>
+                    <script>
+                        function onn() {
+                            document.getElementById("over").style.display = "block";
+                        }
+                        function offf() {
+                            document.getElementById("over").style.display = "none";
+                        }
+                        </script>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--End navecation-->
+    
+    <!--Srart Header-->
+    <header>
+        <div class="continer land"data-aos="zoom-in-down">
+            <div class="content">
+                <h1>Welcome To Our Store</h1>
+                <p>Online Book store is an online web application where the customer can purchase books online.
+                Through a web browser the customers can search for a book by its title or author, later can 
+                add to the shopping cart and finally purchase using credit card transaction.
+                <p>Join Us And Enjoy Buying And Reading Different Useful Books.</p>
+            </div>
+            <div class="read">
+                <img src="imegs/Reading glasses.gif">
+            </div>
+        </div>
+        <a href="#boook" class="go-down">
+            <i class="fa-solid fa-angles-down"></i>
+        </a>
+    </header>
+    <!--End Header-->
+    
+    <!--Start Title Section-->
+    <h2 class="main-title" id="boook">Novel</h2>
+    <!--End Title Section-->
+    
+    <!--start Novel Book Section-->
+        <!-- Swiper -->
+        <div class="swiper mySwiper" data-aos="fade-right" data-aos-offset="300"data-aos-easing="ease-in-sine">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="https://m.media-amazon.com/images/I/517PJt-WqTL.jpg" alt="Deth Comest to Call book"></div>
+                <div class="swiper-slide"><img src="https://images.penguinrandomhouse.com/cover/700jpg/9780440226314" alt="jolia london"></div>
+                <div class="swiper-slide"><img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1328847563l/965733.jpg" alt="the book of god"></div>
+                <div class="swiper-slide"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRCXDUvohQZ6ck52_pmBSVrHau5Jw6pC9Ub_-iWfwDVNkTCE6A3Qxo7Gl6-bzPUMa6Xqw&usqp=CAU" alt="solar bones"></div>
+                <div class="swiper-slide"><img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1348403316l/6000900.jpg" alt="nora robits"></div>
+                <div class="swiper-slide"><img src="https://bestlifeonline.com/wp-content/uploads/sites/3/2020/10/Harry-Potter-and-the-Chamber-of-Secrets-book-cover.jpg" alt="hary boter"></div>
+                <div class="swiper-slide"><img src="https://qph.cf2.quoracdn.net/main-qimg-196508f7dda8c53c07e4a08c423d8be8.webp" alt="the kite runner"></div>
+                <div class="swiper-slide"><img src="https://www.washingtonindependentreviewofbooks.com/images/made/assets/uploads/losthistory_429_645.jpg" alt="the lost history of the star"></div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+        <!-- Swiper JS -->
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            slidesPerGroup: 1,
+            loop: true,
+            loopFillGroupWithBlank: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            });
+        </script>
+    <!--end Novel Book Section-->
+    
+    <!--start title section-->
+        <h2 class="main-title">Fiction</h2>
+    <!--End Title Section-->
+    
+    <!--start drama Book Section-->
+        <!-- Swiper -->
+        <div class="swiper mySwiper"data-aos="fade-right" data-aos-offset="300"data-aos-easing="ease-in-sine">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="https://i.harperapps.com/covers/9780061998676/x450.jpg" alt="game chnger"></div>
+                <div class="swiper-slide"><img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1641777418l/58490567.jpg" alt="the dimond eye"></div>
+                <div class="swiper-slide"><img src="https://www.penguin.co.uk/content/dam/prh/books/309/309245/9780241367087.jpg.transform/PRHDesktopWide_small/image.jpg" alt="the wisper"></div>
+                <div class="swiper-slide"><img src="https://images2.penguinrandomhouse.com/cover/9780525539797" alt="liza scotline"></div>
+                <div class="swiper-slide"><img src="https://shereads.com/wp-content/uploads/2021/12/TheAddress_FionaDavis.jpg" alt="adress"></div>
+                <div class="swiper-slide"><img src="https://ik.imagekit.io/panmac/tr:q-75,di-placeholder_portrait_aMjPtD9YZ.jpg,w-350,pr-true,bl/edition/9781529086478.jpg" alt="five tusday"></div>
+                <div class="swiper-slide"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiXFzmIcRzz4KrvoZTdcYganGc0uTZQlC1jA&usqp=CAU" alt="the lamplighter"></div>
+                <div class="swiper-slide"><img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/science-fiction-book-cover-design-template-b3ebf6385a80a0f8a08d5e813d2bdf44_screen.jpg?ts=1637019532" alt="the gravity"></div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+        <!-- Swiper JS -->
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 6,
+            spaceBetween: 30,
+            slidesPerGroup: 1,
+            loop: true,
+            loopFillGroupWithBlank: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            });
+        </script>
+    <!--end Novel Book Section-->
+    
+    <!--start title-->
+        <h2 class="main-title">Short Story</h2>
+    <!--End Title Section-->
+    <!--start short stpy Book Section-->
+        <!-- Swiper -->
+        <div class="swiper mySwiper last"data-aos="fade-right" data-aos-offset="300"data-aos-easing="ease-in-sine">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="https://supercima.com/wp-content/uploads/2021/10/The-Jungle-Book-2_2003.webp" alt="book"></div>
+                <div class="swiper-slide"><img src="https://99designs-blog.imgix.net/blog/wp-content/uploads/2018/01/attachment_73599840-e1516026193959.png?auto=format&q=60&fit=max&w=930" alt="book"></div>
+                <div class="swiper-slide"><img src="https://images-na.ssl-images-amazon.com/images/I/81OE-HvSdwL.jpg" alt="book"></div>
+                <div class="swiper-slide"><img src="https://booksupnorth.com/wp-content/uploads/2020/10/HatFullofSecrets-768x1152.jpg" alt="book"></div>
+                <div class="swiper-slide"><img src="https://images.squarespace-cdn.com/content/v1/50769910e4b07864e5d07147/1512527063168-1JC9Z1QKOREMMQFA891K/image-asset.png" alt="book"></div>
+                <div class="swiper-slide"><img src="https://static01.nyt.com/images/2020/12/06/books/review/06KidsNotables-03/06KidsNotables-03-mobileMasterAt3x.jpg" alt="book"></div>
+                <div class="swiper-slide"><img src="https://www.mbibooks.com/mbibooks_details/uploads/2017/09/16422_14494.jpg" alt="book"></div>
+                <div class="swiper-slide"><img src="https://images.penguinrandomhouse.com/cover/9781944530402" alt="book"></div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+        <!-- Swiper JS -->
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 6,
+            spaceBetween: 30,
+            slidesPerGroup: 1,
+            loop: true,
+            loopFillGroupWithBlank: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            });
+        </script>
+    <!--End books Section-->
+
+    <!--start contact us section-->
+    <img src="imege/person-blue-shirt.png" alt="">
+    <div class="card-conainer">
+        <div class="card-title">
+            <h3>Contact Us</h3>
+            <P>full stack web developer</P>
+        </div>
+        <div class="card-content">
+            <div>
+                <p><i class="fa-solid fa-phone"></i>Phone Number</p>
+                <p>+249 --- --- ---</p>
+            </div>
+            <div>
+                <p><i class="fa-solid fa-location-dot"></i>Location</p>
+                <p>Sudan-Khatrtoum</p>
+            </div>
+            <div>
+                <p><i class="fa-regular fa-envelope"></i>Email</p>
+                <p>some@examble.com</p>
+            </div>
+        </div>
+        </div>
+    <!--end contact us section-->
+
+    <!--Start Foter Section-->
+    <footer>
+        <div class="info">
+            <a href="">Contact Us</a>
+        </div>
+        <p class="copy">2022 &COPY; Alaa Mohamed </p>
+        <div class="social">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-whatsapp"></i>
+            <i class="fa-brands fa-telegram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
+    </footer>
+    <!--end Foter Section-->
+    
+    <script src="https://kit.fontawesome.com/428387b449.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
